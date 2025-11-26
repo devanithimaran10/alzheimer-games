@@ -279,7 +279,12 @@ function VRScene({ children }) {
     };
   }, [session]);
 
-  return <>{children}</>;
+  // In VR, position content in front of the user with comfortable spacing
+  // Position at [0, 1.6, -3] - centered horizontally, at eye level (1.6m), 3 meters in front
+  // Only apply this offset in VR mode, keep desktop view as is
+  return (
+    <group position={isPresenting ? [0, 1.6, -3] : [0, 0, 0]}>{children}</group>
+  );
 }
 
 function App() {
