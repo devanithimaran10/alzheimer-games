@@ -71,26 +71,26 @@ function Button({
         onPointerOver={() => setIsHovered(true)}
         onPointerOut={() => setIsHovered(false)}
       >
-        <boxGeometry args={[3, 1, 0.2]} />
+        <boxGeometry args={[2.5, 0.8, 0.2]} />
         <meshStandardMaterial color={isHovered ? "#4a9eff" : "#2a5a9f"} />
       </mesh>
       <Text
-        position={[0, 0.2, 0.15]}
-        fontSize={0.3}
+        position={[0, 0.15, 0.15]}
+        fontSize={0.25}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"
-        maxWidth={2.5}
+        maxWidth={2.2}
       >
         {text}
       </Text>
       <Text
-        position={[0, -0.2, 0.15]}
-        fontSize={0.15}
+        position={[0, -0.15, 0.15]}
+        fontSize={0.12}
         color="#cccccc"
         anchorX="center"
         anchorY="middle"
-        maxWidth={2.5}
+        maxWidth={2.2}
       >
         {description}
       </Text>
@@ -104,8 +104,8 @@ function MainMenu({ onSelectGame }) {
   return (
     <group>
       <Text
-        position={[0, 3, 0]}
-        fontSize={0.8}
+        position={[0, 2.5, 0]}
+        fontSize={0.6}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"
@@ -117,7 +117,7 @@ function MainMenu({ onSelectGame }) {
       {gameOptions.map((game, index) => (
         <Button
           key={game.id}
-          position={[0, 1.5 - index * 1.2, 0]}
+          position={[0, 1.8 - index * 0.9, 0]}
           text={game.name}
           description={game.description}
           onClick={() => onSelectGame(game.id)}
