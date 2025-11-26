@@ -280,10 +280,11 @@ function VRScene({ children }) {
   }, [session]);
 
   // In VR, position content in front of the user with comfortable spacing
-  // Position at [0, 1.6, -3] - centered horizontally, at eye level (1.6m), 3 meters in front
+  // Position at [0, 1.6, -6] - centered horizontally, at eye level (1.6m), 6 meters in front
   // Only apply this offset in VR mode, keep desktop view as is
+  // Increased distance to -6 for comfortable viewing space (user should be centered between blocks)
   return (
-    <group position={isPresenting ? [0, 1.6, -3] : [0, 0, 0]}>{children}</group>
+    <group position={isPresenting ? [0, 1.6, -6] : [0, 0, 0]}>{children}</group>
   );
 }
 
