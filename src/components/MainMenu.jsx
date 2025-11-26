@@ -71,26 +71,26 @@ function Button({
         onPointerOver={() => setIsHovered(true)}
         onPointerOut={() => setIsHovered(false)}
       >
-        <boxGeometry args={[2.5, 0.5, 0.2]} />
+        <boxGeometry args={[1.8, 0.4, 0.15]} />
         <meshStandardMaterial color={isHovered ? "#4a9eff" : "#2a5a9f"} />
       </mesh>
       <Text
-        position={[0, 0.1, 0.15]}
-        fontSize={0.22}
+        position={[0, 0.08, 0.12]}
+        fontSize={0.18}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"
-        maxWidth={2.2}
+        maxWidth={1.7}
       >
         {text}
       </Text>
       <Text
-        position={[0, -0.1, 0.15]}
-        fontSize={0.1}
+        position={[0, -0.08, 0.12]}
+        fontSize={0.08}
         color="#cccccc"
         anchorX="center"
         anchorY="middle"
-        maxWidth={2.2}
+        maxWidth={1.7}
       >
         {description}
       </Text>
@@ -111,7 +111,7 @@ function MainMenu({ onSelectGame }) {
     <group>
       <Text
         position={[0, 2.2, 0]}
-        fontSize={0.5}
+        fontSize={0.4}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"

@@ -239,12 +239,12 @@ function MemoryTray({ onBack }) {
             })}
           </group>
           <mesh position={[0, -2.5, 0]} onClick={checkHardLevel}>
-            <boxGeometry args={[2, 0.8, 0.2]} />
+            <boxGeometry args={[1.5, 0.6, 0.15]} />
             <meshStandardMaterial color="#4caf50" />
           </mesh>
           <Text
-            position={[0, -2.5, 0.15]}
-            fontSize={0.3}
+            position={[0, -2.5, 0.12]}
+            fontSize={0.22}
             color="#ffffff"
             anchorX="center"
             anchorY="middle"
@@ -269,7 +269,7 @@ function MemoryTray({ onBack }) {
 
       {/* Level toggle */}
       <mesh position={[-4, 3.5, 0]} onClick={changeLevel}>
-        <boxGeometry args={[1.5, 0.5, 0.2]} />
+        <boxGeometry args={[1.2, 0.4, 0.15]} />
         <meshStandardMaterial color="#9c27b0" />
       </mesh>
       <Text

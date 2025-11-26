@@ -244,12 +244,12 @@ function FacesAndNames({ onBack }) {
 
       {/* Reset button */}
       <mesh position={[4, 3.5, 0]} onClick={resetRound}>
-        <boxGeometry args={[1.2, 0.5, 0.2]} />
+        <boxGeometry args={[1.0, 0.4, 0.15]} />
         <meshStandardMaterial color="#66bb6a" />
       </mesh>
       <Text
         position={[4, 3.5, 0.15]}
-        fontSize={0.2}
+        fontSize={0.16}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"

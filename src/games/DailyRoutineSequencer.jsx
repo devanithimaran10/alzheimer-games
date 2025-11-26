@@ -183,12 +183,12 @@ function DailyRoutineSequencer({ onBack }) {
       {/* Hint and Reset buttons */}
       <group position={[0, -2.5, 0]}>
         <mesh onClick={handleHint} onPointerOver={(e) => e.stopPropagation()}>
-          <boxGeometry args={[1.5, 0.6, 0.2]} />
+          <boxGeometry args={[1.2, 0.5, 0.15]} />
           <meshStandardMaterial color="#ffa726" />
         </mesh>
         <Text
-          position={[0, 0, 0.15]}
-          fontSize={0.2}
+          position={[0, 0, 0.12]}
+          fontSize={0.16}
           color="#ffffff"
           anchorX="center"
           anchorY="middle"
@@ -197,16 +197,16 @@ function DailyRoutineSequencer({ onBack }) {
         </Text>
 
         <mesh
-          position={[2, 0, 0]}
+          position={[1.6, 0, 0]}
           onClick={resetCurrent}
           onPointerOver={(e) => e.stopPropagation()}
         >
-          <boxGeometry args={[1.5, 0.6, 0.2]} />
+          <boxGeometry args={[1.2, 0.5, 0.15]} />
           <meshStandardMaterial color="#66bb6a" />
         </mesh>
         <Text
-          position={[2, 0, 0.15]}
-          fontSize={0.2}
+          position={[1.6, 0, 0.12]}
+          fontSize={0.16}
           color="#ffffff"
           anchorX="center"
           anchorY="middle"

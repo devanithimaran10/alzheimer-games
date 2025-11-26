@@ -22,12 +22,12 @@ function BackButton({ onBack, position = [0, -3.5, 0] }) {
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
       >
-        <boxGeometry args={[2, 0.8, 0.2]} />
+        <boxGeometry args={[1.5, 0.6, 0.15]} />
         <meshStandardMaterial color={hovered ? "#ff6b6b" : "#cc4444"} />
       </mesh>
       <Text
-        position={[0, 0, 0.15]}
-        fontSize={0.3}
+        position={[0, 0, 0.12]}
+        fontSize={0.22}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"

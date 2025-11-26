@@ -34,17 +34,17 @@ function GameCard({
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
       >
-        <boxGeometry args={[1.5, 1.5, 0.1]} />
+        <boxGeometry args={[1.2, 1.2, 0.08]} />
         <meshStandardMaterial color={color} />
       </mesh>
       {text && (
         <Text
-          position={[0, -0.9, 0.1]}
-          fontSize={0.2}
+          position={[0, -0.7, 0.08]}
+          fontSize={0.16}
           color="#ffffff"
           anchorX="center"
           anchorY="middle"
-          maxWidth={1.3}
+          maxWidth={1.1}
         >
           {text}
         </Text>

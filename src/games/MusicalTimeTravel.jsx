@@ -122,7 +122,7 @@ function MusicalTimeTravel({ onBack }) {
       {/* Lyric display */}
       <group position={[0, 1.2, 0]}>
         <mesh>
-          <boxGeometry args={[6, 1.5, 0.1]} />
+          <boxGeometry args={[4.5, 1.2, 0.08]} />
           <meshStandardMaterial color="#2a2a2a" />
         </mesh>
         <Text
@@ -205,12 +205,12 @@ function MusicalTimeTravel({ onBack }) {
 
       {/* Reset button */}
       <mesh position={[4, 3.5, 0]} onClick={resetGame}>
-        <boxGeometry args={[1.2, 0.5, 0.2]} />
+        <boxGeometry args={[1.0, 0.4, 0.15]} />
         <meshStandardMaterial color="#66bb6a" />
       </mesh>
       <Text
-        position={[4, 3.5, 0.15]}
-        fontSize={0.2}
+        position={[4, 3.5, 0.12]}
+        fontSize={0.16}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"

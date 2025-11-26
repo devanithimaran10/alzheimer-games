@@ -280,13 +280,13 @@ function VRScene({ children }) {
   }, [session]);
 
   // In VR, position content in front of the user with comfortable spacing
-  // Scale down the UI to 0.6x for better fit in VR viewport
+  // Scale down the UI to 0.4x (40% size) for much smaller buttons in VR
   // Position at [0, 1.5, -4] - centered horizontally, at comfortable eye level, 4 meters in front
   // Only apply this offset in VR mode, keep desktop view as is
   return (
     <group
       position={isPresenting ? [0, 1.5, -4] : [0, 0, 0]}
-      scale={isPresenting ? [0.6, 0.6, 0.6] : [1, 1, 1]}
+      scale={isPresenting ? [0.4, 0.4, 0.4] : [1, 1, 1]}
     >
       {children}
     </group>
